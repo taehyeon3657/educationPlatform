@@ -8,6 +8,7 @@ import Invitation from "components/common/Invitation";
 import { getAllAuthors, getAllCourses } from "utils/courses";
 
 export default function Index({ courses, authors }) {
+  // console.log('courses: ',courses);
   return (
     <Layout>
       <SEO title="Inicio" />

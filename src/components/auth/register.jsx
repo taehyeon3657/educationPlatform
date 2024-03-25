@@ -17,7 +17,10 @@ export default function login() {
   };
 
   const submitHandlerRegister = (e) => {
+    console.log('create account clicked');
     e.preventDefault();
+    console.log('e.target: ', e.target);
+    console.log('openTargetPage: ', openTargetPage);
     // users.register(e.target, openTargetPage);
   };
 
@@ -56,7 +59,7 @@ export default function login() {
                   className="rounded p-4 bg-white"
                   onSubmit={submitHandlerRegister}
                 >
-                  <h3 className="h4 text-black mb-4">Crear cuenta:</h3>
+                  <h3 className="h4 text-black mb-4">계정 생성</h3>
                   <div className="form-group">
                     <input
                       type="email"
@@ -111,7 +114,7 @@ export default function login() {
                   </div>
                   <div className="form-group text-center">
                     <Button type="submit" color="primary">
-                      Crear cuenta
+                      Create Account?
                       <Icons icon="arrowRight" className="ml-2" />
                     </Button>
                   </div>
